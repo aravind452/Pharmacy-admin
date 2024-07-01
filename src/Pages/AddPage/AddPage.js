@@ -4,8 +4,9 @@ import ValidateAddProductValues from "../../Utils/ValidateAddProductValues";
 import "./AddPage.css";
 
 function AddPage() {
-  const { handleChange, handleSubmit, productValues, errors, loader } =
-    useAddForm(ValidateAddProductValues);
+  const { handleChange, handleSubmit, productValues, errors } = useAddForm(
+    ValidateAddProductValues
+  );
   return (
     <div className="add-product-section">
       <AdminNavbar />
