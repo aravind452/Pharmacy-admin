@@ -1,0 +1,19 @@
+.product-search-container {
+  max-width: 300px;
+  display: flex;
+  align-items: baseline;
+}
+
+.product-search-container input {
+  flex: 1;
+}
+
+.prod-search-btn {
+  flex: 1;
+  padding: 0;
+  height: 30px;
+  margin-left: 10px;
+  color: white;
+  background-color: #044599;
+  border-radius: 4px;
+}
