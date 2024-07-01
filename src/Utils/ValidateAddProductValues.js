@@ -10,9 +10,7 @@ export default function ValidateAddProductValues(values) {
   if (!values.product_price.trim()) {
     errors.product_price = "Please Enter Product Price";
   } else if (
-    !/^(\$|)([1-9]\d{0,2}(\,\d{3})*|([1-9]\d*))(\.\d{2})?$/.test(
-      values.product_price
-    )
+    !/^(\$)?([1-9]\d{0,2}(,\d{3})*|0)?(\.\d{2})?$/.test(values.product_price)
   ) {
     errors.product_price = "Enter price only. For example: 523.36";
   }
